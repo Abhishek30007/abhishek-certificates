@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NPTEL Certificate NOC-DX4V-P0VE-XE4Y6",
+  title: "Document Verification",
   robots: {
     index: false,
     follow: false,
