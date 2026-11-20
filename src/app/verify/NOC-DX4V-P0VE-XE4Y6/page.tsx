@@ -7,30 +7,41 @@ export const metadata: Metadata = {
 
 export default function VerifyPage() {
   return (
-    <div
+    <main
       style={{
-        margin: 0,
-        padding: 0,
+        minHeight: "100vh",
         width: "100%",
-        display: "block",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "flex-start",
         backgroundColor: "#ffffff",
+        padding: "32px 24px",
+        boxSizing: "border-box",
       }}
     >
-      <img
-        src="/document.jpg"
-        alt="NPTEL Certificate NOC-DX4V-P0VE-XE4Y6"
+      <div
         style={{
-          display: "block",
           width: "100%",
-          height: "auto",
-          margin: 0,
-          padding: 0,
-          border: "none",
-          outline: "none",
-          boxShadow: "none",
-          borderRadius: 0,
+          maxWidth: "880px",
+          display: "flex",
+          justifyContent: "center",
+          margin: "0 auto",
         }}
-      />
-    </div>
+      >
+        <img
+          src="/document.jpg"
+          alt="NPTEL Certificate NOC-DX4V-P0VE-XE4Y6"
+          style={{
+            display: "block",
+            width: "100%",
+            height: "auto",
+            maxWidth: "100%",
+            border: "1px solid #d4d4d8",
+            boxSizing: "border-box",
+            borderRadius: "0px",
+          }}
+        />
+      </div>
+    </main>
   );
 }
