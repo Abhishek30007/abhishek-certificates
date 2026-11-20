@@ -1,47 +1,47 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Document Verification - NOC-DX4V-P0VE-XE4Y6",
-  description: "Certificate Verification NOC-DX4V-P0VE-XE4Y6",
+  title: "NPTEL Certificate NOC-DX4V-P0VE-XE4Y6",
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function VerifyPage() {
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "flex-start",
-        backgroundColor: "#ffffff",
-        padding: "32px 24px",
-        boxSizing: "border-box",
-      }}
-    >
-      <div
-        style={{
-          width: "100%",
-          maxWidth: "880px",
-          display: "flex",
-          justifyContent: "center",
-          margin: "0 auto",
-        }}
-      >
-        <img
-          src="/document.jpg"
-          alt="NPTEL Certificate NOC-DX4V-P0VE-XE4Y6"
-          style={{
-            display: "block",
-            width: "100%",
-            height: "auto",
-            maxWidth: "100%",
-            border: "1px solid #d4d4d8",
-            boxSizing: "border-box",
-            borderRadius: "0px",
-          }}
-        />
+    <>
+      <div className="sr">
+        <h1>Abhishek Kumar</h1>
+        <p>Wild Life Ecology · JUL-OCT 2026 · Indian Institute of Technology Kanpur</p>
+        <dl>
+          <dt>Certificate</dt>
+          <dd>NOC-DX4V-P0VE-XE4Y6</dd>
+          <dt>Course code</dt>
+          <dd>noc26-ge83</dd>
+          <dt>Cycle</dt>
+          <dd>JUL-OCT 2026</dd>
+          <dt>Final score</dt>
+          <dd>96 / 100</dd>
+          <dt>Badge</dt>
+          <dd>Elite</dd>
+          <dt>Weeks / credits</dt>
+          <dd>12 / 4</dd>
+          <dt>Issued</dt>
+          <dd>2026-11-03</dd>
+          <dt>Status</dt>
+          <dd>LIVE</dd>
+        </dl>
       </div>
-    </main>
+
+      <div className="cert">
+        <a href="/verify/NOC-DX4V-P0VE-XE4Y6/certificate.pdf" rel="nofollow">
+          <img
+            src="/verify/NOC-DX4V-P0VE-XE4Y6/preview.png"
+            alt="NPTEL Certificate NOC-DX4V-P0VE-XE4Y6"
+          />
+        </a>
+      </div>
+    </>
   );
 }
