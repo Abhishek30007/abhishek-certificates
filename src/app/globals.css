@@ -18,11 +18,30 @@ body {
   }
 }
 
+.cert a {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 .cert img {
   display: block;
   width: 100%;
   height: auto;
   border: 1px solid #dee2e6;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.select-none {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .sr {

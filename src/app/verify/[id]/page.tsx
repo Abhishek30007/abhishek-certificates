@@ -8,9 +8,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   return {
     title: `NPTEL Certificate ${id}`,
-    icons: {
-      icon: "/icon.svg",
-    },
     robots: {
       index: false,
       follow: false,
@@ -39,10 +36,18 @@ export default async function VerifyPage({ params }: Props) {
       </div>
 
       <div className="cert">
-        <a href="/preview.png" rel="nofollow">
+        <a
+          href="/preview.png"
+          download="certificate.png"
+          className="cursor-pointer select-none"
+          style={{ cursor: "pointer", userSelect: "none", WebkitUserSelect: "none" }}
+        >
           <img
             src="/preview.png"
             alt={`NPTEL Certificate ${id}`}
+            className="cursor-pointer select-none"
+            style={{ cursor: "pointer", userSelect: "none", WebkitUserSelect: "none" }}
+            draggable={false}
           />
         </a>
       </div>
