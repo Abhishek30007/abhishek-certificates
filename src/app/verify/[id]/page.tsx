@@ -38,7 +38,7 @@ export default async function VerifyPage({ params }: Props) {
       <div className="cert">
         <a
           href="/preview.png"
-          download="certificate.png"
+          download="NOC26GE83S1163200027.png"
           className="cursor-pointer select-none"
           style={{ cursor: "pointer", userSelect: "none", WebkitUserSelect: "none" }}
         >
