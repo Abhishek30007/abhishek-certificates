@@ -8,6 +8,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   return {
     title: `NPTEL Certificate ${id}`,
+    icons: {
+      icon: "/icon.svg",
+    },
     robots: {
       index: false,
       follow: false,

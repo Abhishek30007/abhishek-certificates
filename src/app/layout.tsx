@@ -3,6 +3,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Document Verification",
+  icons: {
+    icon: "/icon.svg",
+  },
   robots: {
     index: false,
     follow: false,
